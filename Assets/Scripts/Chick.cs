@@ -6,10 +6,8 @@ using UnityEngine;
 
 public class Chick : PlayerController //Inheritance
 {
-    private float m_maxHeight = 4.0f; //инкапсуляция - надо не допустить, чтобы слишком
-    //высоко прыгал цыпленок
-    public float maxHeight //общедоступна, чтобы можно было использовать
-        //в другом классе (Jump)
+    private float m_maxHeight = 4.0f; //ENCAPSULATION
+    public float maxHeight 
     {
         get { return m_maxHeight; }
         set 

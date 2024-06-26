@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody playerRb;
-    private bool isJumping; //предотвращает повторные прыжки в воздухе
+    private bool isJumping;
 
     void Start()
     {
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        Jump(); //Abstraction - выделение в отдельный метод, чтобы вызывать его в любое время
+        Jump(); //Abstraction
     }
     public virtual void Jump() //Polymorphism 
     {
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
             isJumping = true;
         }
     }
-    private void OnCollisionEnter(Collision collision) //метод отслеживания столкновений
+    private void OnCollisionEnter(Collision collision) 
     {
         isJumping = false;
     }
