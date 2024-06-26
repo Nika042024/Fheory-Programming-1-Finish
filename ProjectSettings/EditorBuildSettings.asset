@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chick.unity
     guid: f3399a7525741f24692b0f2caa29ead0
+  - enabled: 1
+    path: Assets/Scenes/Welcome.unity
+    guid: c6e480dd9f716ab4cbf8ce1883432434
   m_configObjects: {}
